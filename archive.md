@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 title : 文章列表
 ---
 
@@ -7,10 +7,12 @@ title : 文章列表
 文章列表
 --------
 
-{% for post in site.posts %}
-
-- {{ post.date | date: "%Y-%m-%d"}} &raquo; [{{ post.title }}]({{ post.url }})
-
-{% endfor %}
-
+	<div>
+		<h3>分类</h3>
+		<ul>
+			{% for category in site.categories %}
+			<li><a href="/category.html#{{category[0]}}">{{category[0]}} ({{category[1] | size}})</a></li>
+			{% endfor %}
+		</ul>
+	</div>
 
