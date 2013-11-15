@@ -8,17 +8,6 @@ title : 文章分类
 --------
 
 
-{% for category in site.categories %}
-
-<a id="{{category[0]}}"></a>
-
-####{{category[0]}} ({{category[1] | size}})
-
-{% for post in category[1] %}
-
-- [{{post.title}}]({{post.url}})
-
+{% for post in site.posts %}
+  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
-
-{% endfor %}
-
