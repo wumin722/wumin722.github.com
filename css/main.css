@@ -40,7 +40,7 @@ ul{list-style:circle;}
 
 
 /* header */
-#header{position:relative;border-bottom:1px solid #ccc;}
+#header{position:relative;}
 #header h1,
 #header .describe{font-family:Handlee,Palatino,"Palatino Linotype", "Book Antiqua", Georgia;}
 #header h1{float:left;margin:0;font-size:2.5em;
