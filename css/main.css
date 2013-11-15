@@ -28,13 +28,13 @@ ul{list-style:circle;}
 
 .header-info,
 #content,
-#footer{width:900px;margin:0 auto;}
+#footer{width:900px;margin:30px;}
 #container{width:630px;margin:2em auto;display:block;padding:0 2em;}
 
 
 
 /* 侧边栏 */
-.nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-12em;width:9em;text-align:right;position: fixed;}
+.nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-12em;width:9em;text-align:right;position: fixed;margin-top:5em;}
 .nav a{display:block;padding:.7em 1em;color:#000000;}
 .nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 
@@ -66,7 +66,7 @@ ul{list-style:circle;}
 /* 首页主体 */
 #content{padding-top:20px;}
 .article-list{float:left;width:630px;}
-.article-list li{border-bottom:1px dashed #dedede;}
+/*.article-list li{border-bottom:1px dashed #dedede;}*/
 .article-list h3 a{color:#353535;}
 .aside{float:left;padding-left:40px;width:230px;}
 .aside h3{font-size:1.2em;padding-left:20px;}
