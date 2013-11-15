@@ -1,4 +1,4 @@
-body{color:#333;padding:0;margin:0;background:#fdfdfd;
+body{color:black;padding:0;margin:0;background:white;
 	font:15px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 time{font-size:13px;color:#999;}
@@ -29,7 +29,7 @@ ul{list-style:circle;}
 .header-info,
 #content,
 #footer{width:900px;margin:0 auto;}
-
+#container{width:630px;margin:2em auto;display:block;padding:0 2em;}
 
 
 
@@ -74,7 +74,7 @@ ul{list-style:circle;}
 
 /* 文章最终页 */
 #post,
-#comment{margin:0 auto;width:630px;}
+#comment{width:630px;}
 #post{
 	-webkit-box-shadow:inset 0 0 1px #fff, inset 0 0 3px #fff;
 	-moz-box-shadow:inset 0 0 1px #fff, inset 0 0 3px #fff;
