@@ -1,7 +1,7 @@
---
+---
 layout: index
 title: Links
---
+---
 
 <h3>友情链接</h3>
 	<ul>
