@@ -2,8 +2,8 @@
 layout: post
 title: github-主页
 summary: 总结
-categories: [生活]
-tags: [生活]
+categories: [life]
+tags: [life]
 pubish: true
 ---
 
