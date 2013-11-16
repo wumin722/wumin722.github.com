@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
     return 0;
 }
 {%endhighlight%}
-转自 [hahaya博客]:(hahaya.github.io)
+转自 [hahaya博客]: http://hahaya.github.io
 
