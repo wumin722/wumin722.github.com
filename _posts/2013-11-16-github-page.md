@@ -7,6 +7,9 @@ tags: [life]
 pubish: true
 ---
 
+# {{ page.title }} #
+{{ page.summary }}
+
 迟到的 Hello World!
 ===========================
 
