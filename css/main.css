@@ -20,7 +20,7 @@ ul{list-style:circle;}
 .l{float:left;}.r{float:right;}.c{clear:both;}
 .tac{text-align:center;}
 .fix{zoom:1;}
-.fix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.fix:after{display:block;height:0;clear:both;visibility:hidden;}
 .c9{color:#999;}
 
 .navigation ul,
@@ -65,7 +65,7 @@ ul{list-style:circle;}
 
 /* 首页主体 */
 #content{padding-top:20px;}
-.article-list{float:left;width:630px;}
+.article-list{float:left;width:630px;margin-top:3em;}
 /*.article-list li{border-bottom:1px dashed #dedede;}*/
 .article-list h3 a{color:#353535;}
 .aside{float:left;padding-left:40px;width:230px;}
