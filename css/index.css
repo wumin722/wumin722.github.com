@@ -4,7 +4,7 @@ body {
 	font-size: 30px;
 	text-align: center;
     margin: 0;
-    padding: 0;
+    padding-top:100px;
 }
 
 h1 {
@@ -45,7 +45,6 @@ i {
 }
 
 /* block 文字块 */  
-.read-more { background-color: #348fd4; }
 .read-more h2 { color: #06406c; }
 .read-more h2 a { background: none; padding: 0; font-size: normal; }
 .read-more a { color: #FFF; font-size: 40px; font-weight: normal;font-style: normal; background-color: #06406c; padding: 10px 15px; border-radius: 10px; text-decoration: none; } 

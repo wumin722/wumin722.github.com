@@ -1,8 +1,9 @@
 body{color:black;padding:0;margin:0;background:white;
-	font:15px/1.625 "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size:17px;}
 
 time{font-size:13px;color:#999;}
-a, a code{color:#08c;text-decoration:none;}
+a, a code{color:#336699;text-decoration:none;}
 a:hover{color:#1982d1;text-decoration:underline;}
 code{font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 	padding:1px 4px;background-color:#f9f9f9;border:1px solid #e8e8e8;
@@ -26,9 +27,6 @@ ul{list-style:circle;}
 .navigation ul,
 .article-list ul{list-style:none;padding:0;margin:0;}
 
-.header-info,
-#content,
-#footer{width:900px;margin:30px;}
 #container{width:630px;margin:2em auto;display:block;padding:0 2em;}
 
 
@@ -39,10 +37,11 @@ ul{list-style:circle;}
 .nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 
 
-/* header */
-#header{position:relative;}
+/* header 
 #header h1,
 #header .describe{font-family:Handlee,Palatino,"Palatino Linotype", "Book Antiqua", Georgia;}
+*/
+#header{position:relative;}
 #header h1{float:left;margin:0;font-size:2.5em;
 	-webkit-text-shadow: 0 1px 2px rgba(0,0,0,1);
 	-moz-text-shadow: 0 1px 2px rgba(0,0,0,1);
@@ -57,15 +56,14 @@ ul{list-style:circle;}
 
 
 /* footer */
-#footer{overflow:hidden;margin-top:50px;padding-bottom:20px;border-top:1px solid #d3d2d2;
+#footer{overflow:hidden;margin-top:200px;padding-left:10px;padding-right:10px;
 	-webkit-box-shadow:0 -1px 0 rgba(255,255,255,.7);	
 	-moz-box-shadow:0 -1px 0 rgba(255,255,255,.7);
-	box-shadow:0 -1px 0 rgba(255,255,255,.7);
-}
+	background-color:#f5f5f5;}
 
 /* 首页主体 */
 #content{padding-top:20px;}
-.article-list{float:left;width:630px;margin-top:3em;}
+.article-list{width:630px;margin-top:5.2em;}
 /*.article-list li{border-bottom:1px dashed #dedede;}*/
 .article-list h3 a{color:#353535;}
 .aside{float:left;padding-left:40px;width:230px;}
