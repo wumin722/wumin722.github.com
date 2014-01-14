@@ -1,7 +1,30 @@
----
-layout: index
----
+<!DOCTYPE html>
+<html>
 
-{% for post in site.posts %}
-  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="/css/index.css" />
+		<link rel="stylesheet" href="/css/pygments_native.css" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Handlee">
+	</head>
+	<body>
+
+<!-- return back to home page-->
+
+<div id="site-navbar" style="position: absolute; top: -4px; left: -3px; border: 0; z-index: 2000;padding:0;margin:0;"><a href="/" title="返回首页" style="background:none;"><img src="/images/return-back.png" style="padding:0;margin:0;border:0; -webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;"></a></div>	
+
+
+	
+	<div id="index">
+		<h1>myBlog 博客简介 </h1>	
+		<p>以统计和计算机为主要内容的一些小文章</p>
+		<i> just for fun </i>
+		<p>作者: 吴敏</p>
+	</div>
+
+	<div class="read-more">
+		<a ref="/list.html"> 阅读文章 </a>
+	</div>		
+	</body>
+</html>
