@@ -9,6 +9,7 @@ title : 文章列表
 		<p class="describe">just for fun</p>
 	</div>
 </header>
+<br/>
 <div>
 	<ul>
 	{% for category in site.categories %}
