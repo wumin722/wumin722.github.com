@@ -1,8 +1,15 @@
 ---
-layout: index
+layout: default
 title: about
 ---
 
+<header id="header">
+	<div class="header-info fix">
+		<h1><a href="/">说明</a></h1>
+		<p class="describe">just for fun</p>
+				
+	</div>
+</header>
 ### About Me ###
 
 * id: wumin722
