@@ -7,7 +7,6 @@ title : 文章列表
 	<div class="header-info fix">
 		<h1><a href="/">分类</a></h1>
 		<p class="describe">just for fun</p>
-				
 	</div>
 </header>
 <div>
