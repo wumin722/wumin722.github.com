@@ -10,6 +10,7 @@ title : 文章列表
 	</div>
 </header>
 <br/>
+<br/>
 <div>
 	<ul>
 	{% for category in site.categories %}
