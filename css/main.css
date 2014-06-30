@@ -21,7 +21,7 @@ li {
 padding:9px;
 }
 
-.l{float:left;}.r{float:right;}.c{clear:both;}
+.l{float:left;}.r{float:left;}.c{clear:both;}
 .tac{text-align:center;}
 .fix{zoom:1;}
 .fix:after{display:block;height:0;clear:both;visibility:hidden;}
