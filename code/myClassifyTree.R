@@ -4,18 +4,14 @@
 #1,确定母节点的所有分割点
 #2,找出最优分割点
 #3,用最优分割点确定子节点
-#4,对所有子节点重复1-3,直到子节点entropy小于某一数值
+#4,对所有子节点重复1-3,直到子节点Gini index小于某一数值
 ####
 
 MyClassifyTree <- function(data, max_nodes_num, min_inpurity) {
 	#变量初始化
 	nodes_num <- 1
-	tab <- paste(names(table(data[, 1])), 
-							 table(data[, 1]), collapse=" ")
-	root_node <- as.data.frame(list(dat=AString(1:nrow(data)),
-																	path="root", 
-																	tab=tab,
-																	is_leaf=FALSE))
+	tab <- paste(names(table(data[, 1])), table(data[, 1]), collapse=" ")
+	root_node <- as.data.frame(list(dat=AString(1:nrow(data)),path="root", tab=tab, is_leaf=FALSE))
 	all_nodes <- root_node
 	is_end <- FALSE
 	#初始化所需函数
@@ -61,33 +57,18 @@ MyClassifyTree <- function(data, max_nodes_num, min_inpurity) {
 		possible_daughters <- DaughterNodes(split_point, m)
 		prob <- length(which(
 			data[index, split_point$VAR] < split_point$VALUE))/length(index)
-		return(Info(m) - prob*ifelse(is.nan(Info(possible_daughters$left)), 
-																 0, Info(possible_daughters$left))-
-					 	(1-prob)*ifelse(is.nan(Info(possible_daughters$right)),
-					 									0, Info(possible_daughters$right)))
+		return(Info(m) - prob*ifelse(is.nan(Info(possible_daughters$left)), 0, Info(possible_daughters$left)) - (1-prob)*ifelse(is.nan(Info(possible_daughters$right)),0, Info(possible_daughters$right)))
 	}
 	
 	DaughterNodes <- function(split_point, m) {#计算子节点
 		index <- StringToVector(as.character(m$dat))
-		left_index <- intersect(index, 
-														which(data[, split_point$VAR] < split_point$VALUE))
-		right_index <- intersect(index, 
-														which(data[, split_point$VAR] >= split_point$VALUE))
-		left_table <- paste(names(table(data[left_index, 1])), 
-												table(data[left_index, 1]), collapse=" ")
-		right_table <- paste(names(table(data[right_index, 1])), 
-												 table(data[right_index, 1]), collapse=" ")
+		left_index <- intersect(index, which(data[, split_point$VAR] < split_point$VALUE))
+		right_index <- intersect(index, which(data[, split_point$VAR] >= split_point$VALUE))
+		left_table <- paste(names(table(data[left_index, 1])), table(data[left_index, 1]), collapse=" ")
+		right_table <- paste(names(table(data[right_index, 1])), table(data[right_index, 1]), collapse=" ")
 		
-		left <- list(dat=AString(left_index), 
-								 path=paste(m$path, paste(names(data)[split_point$VAR], "<", 
-								 												 split_point$VALUE), collapse=","),
-								 tab=left_table,
-								 is_leaf=FALSE)
-		right <- list(dat=AString(right_index),
-									path=paste(m$path, paste(names(data)[split_point$VAR], ">=", 
-																					 split_point$VALUE), collapse=","),
-									tab=right_table,
-									is_leaf=FALSE)
+		left <- list(dat=AString(left_index), path=paste(m$path, paste(names(data)[split_point$VAR], "<", split_point$VALUE), collapse=","),tab=left_table,is_leaf=FALSE)
+		right <- list(dat=AString(right_index),	path=paste(m$path, paste(names(data)[split_point$VAR], ">=", split_point$VALUE), collapse=","),	tab=right_table,is_leaf=FALSE)
 		return(list(left=left, right=right))
 	}
 	
@@ -121,9 +102,7 @@ MyClassifyTree <- function(data, max_nodes_num, min_inpurity) {
 			}
 			p <- GetBestSplitPoint(m)   #通过node m计算最佳分割点			
 			daughter_nodes <- DaughterNodes(p$point, m) #确认子节点
-			all_daughters <- rbind(all_daughters, 
-														 daughter_nodes$left, 
-														 daughter_nodes$right)
+			all_daughters <- rbind(all_daughters, daughter_nodes$left, daughter_nodes$right)
 		}
 		all_nodes <<- rbind(as.matrix(all_nodes), all_daughters)
 		nodes_num <<- ifelse(is.null(all_daughters), 0, nrow(all_daughters)) + nodes_num
