@@ -3,4 +3,4 @@
 #*#
 _site/*
 _posts/*html 
-*Rmd
+*.Rmd
