@@ -2,4 +2,5 @@
 *~
 #*#
 _site/*
-_posts/*.html
+_posts/*.html 
+*.Rmd
