@@ -4,7 +4,7 @@ title: k均值聚类
 summary: kmeans
 categories: statistic
 tags: kmeans
-publish: true
+publish: false
 ---
 # {{ page.title }} #
 {{ page.summary }} 
