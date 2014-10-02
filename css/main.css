@@ -1,5 +1,5 @@
 body {
-background: #fafafa;
+background: white;
 margin: 0;
 padding: 0;
 border: 0;
@@ -26,7 +26,7 @@ padding: 0 1.5em;
 }
 
 .nav-container {
-background: #E4E4E4;
+background: black;
 font-weight: 900;
 text-transform: uppercase;
 font-size: 16px;
@@ -36,12 +36,15 @@ text-align: center;
 } 
 
 .nav-container a {
-color: #64686D;
+color: #BBBEBE;
 display: inline-block;
 padding: 1em;
 text-decoration: none;
 }
 
+.nav-container a:hover {
+  color: white;
+}
 
 .hide-from-print {
 	display: none
