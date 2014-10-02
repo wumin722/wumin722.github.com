@@ -1,17 +1,18 @@
 ---
 layout: default
-title: home
+title: 文章列表
+summary: ......
 ---
 
-<header id="header">
-	<div class="header-info fix">
-		<h1><a href="/">文章列表</a></h1>
-		<p class="describe">just for fun</p>		
-	</div>
-</header>
-
-<div class="article-list">
-	{{ content }}
+<div class="articles">
+	<ul class="artical-list">   
+		{% for post in paginator.posts %}
+			<li itemscope itemtype="http://schema.org/Article">
+				<h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+				<div class="title-desc" itemprop="description">{{ post.description }}</div>
+			</li>
+		{% endfor %}
+	</ul>
 </div>
 
 
