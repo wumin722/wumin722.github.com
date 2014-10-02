@@ -138,7 +138,7 @@ text-align: center;
 }
 
 .feature-main-title {
-font-size: 4.5em;
+font-size: 3.5em;
 color: #fff;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 line-height: 1;
@@ -157,7 +157,7 @@ margin: 0;
 .footer {
 text-align: center;
 overflow: hidden;
-margin-top: 170px;
+margin-top: 70px;
 padding-left: 0px;
 padding-right: 0px;
 }
@@ -177,4 +177,10 @@ color: white;
 .l a{
   color: #CCC6C7;
   text-decoration: none;
+}
+
+
+/*content css*/
+#post {
+  background-color: white;
 }

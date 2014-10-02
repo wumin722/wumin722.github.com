@@ -6,7 +6,7 @@ summary: ......
 
 <div class="articles">
 	<ul class="artical-list">   
-		{% for post in paginator.posts %}
+		{% for post in site.posts %}
 			<li itemscope itemtype="http://schema.org/Article">
 				<h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
 				<div class="title-desc" itemprop="description">{{ post.description }}</div>
