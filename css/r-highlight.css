@@ -1,16 +1,20 @@
-pre {	
-   margin-top: 0;
-   max-width: 95%;
-   white-space: pre-wrap;
+
+pre {
+  background: url(/images/pattern.png);
+  margin-top: 30px;
+  color: white;
+  line-height: 1.2em;
+  max-width: 55em;
+  margin-left: 25px;
+  padding: 20px;
+  border-radius: 3px 3px 3px 3px;
+  white-space: pre-wrap;
 }
 
 pre code {
    display: block; padding: 0.5em;
 }
 
-code.r, code.cpp {
-   background-color: #f5f5f5;
-}
 
 table, td, th {
   border: none;
@@ -43,29 +47,29 @@ hr {
 
 pre .operator,
    pre .paren {
-     color: rgb(104, 118, 135)
+     color: rgb(211, 209, 209);
    }
 
    pre .literal {
-     color: rgb(88, 72, 246)
+     color: rgb(211, 209, 209);
    }
 
    pre .number {
-     color: rgb(0, 0, 205);
+     color: rgb(211, 209, 209);
    }
 
    pre .comment {
-     color: rgb(76, 136, 107);
+     color: #87ceeb;
    }
 
    pre .keyword {
-     color: rgb(0, 0, 255);
+     color: rgb(41, 255, 0);
    }
 
    pre .identifier {
-     color: rgb(0, 0, 0);
+     color: rgb(211, 209, 209);
    }
 
    pre .string {
-     color: rgb(3, 106, 7);
+     color: #87ceeb;
    }

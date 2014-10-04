@@ -1,5 +1,5 @@
 body {
-background: #fafafa;
+background: rgb(255, 253, 253);
 margin: 0;
 padding: 0;
 border: 0;
@@ -154,7 +154,7 @@ padding-left: 10px;
 
 /*content header css*/
 .feature {
-background: url(/images/background.png);
+background: url(/css/background.png);
 padding: 2em 0 2em 0;
 }
 
@@ -190,7 +190,7 @@ z-index: 100;
 left: 0;
 right: 50%;
 height: 50px;
-margin-top: -10px;
+margin-top: 150px;
 margin-left: 250px;
 max-width: 20em;
 text-align: left;
@@ -209,10 +209,56 @@ border-radius: 0px 2px 2px 0px;
 padding: 0 10px 0 35px;
 }
 
-#banner p {
+
+#banner-post {
+  overflow: auto;
+z-index: 100;
+left: 0;
+right: 50%;
+height: 60px;
+margin-top: 150px;
+text-align: left;
+background: #ffcc00;
+border: 1px solid #f0b500;
+-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+-o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+-moz-border-radius: 0px 2px 2px 0px;
+-webkit-border-radius: 0px 2px 2px 0px;
+-o-border-radius: 0px 2px 2px 0px;
+-ms-border-radius: 0px 2px 2px 0px;
+-khtml-border-radius: 0px 2px 2px 0px;
+border-radius: 0px 2px 2px 0px;
+padding: 0 10px 0 35px;
+}
+
+#banner-post h1 {
   font-size: 17.5px;
   font-weight: 700;
   color: #26272E;
+}
+
+#banner-title {
+  font-size: 17.5px;
+  font-weight: 700;
+  color: white;
+  float: left;
+  width: 20%
+}
+
+#banner-sub-title {
+  background: black;
+  font-size: 17.5px;
+  font-weight: 700;
+  color: white;
+  float: left;
+  height: 60px;
+  width: 300px;
+}
+
+#banner-sub-title p {
+  text-align: center;
 }
 
 /*content list css*/
@@ -250,6 +296,32 @@ font-size: 14px;
 font-weight: 200;
 line-height: 26px;
 }
+
+#post {
+  background: rgb(255, 253, 253);
+  margin-top: 30px;
+  color: #5A5A5A;
+  line-height: 1.8em;
+}
+
+#post h2 {
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: black;
+}
+
+#post a {
+  color: #D6C4BB;
+  text-decoration: none;
+}
+
+#post a:hover {
+text-decoration: underline;
+color: #ffcc00;
+}
+
+
 
 /*footer css*/
 

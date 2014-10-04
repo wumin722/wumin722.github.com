@@ -1,23 +1,44 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<article id="post" class="container">
-	<a href="#" class="icon-fullscreen r" title="点击全屏显示"></a>
-	<div class="c9">
-		分类：
-			{%for cg in page.categories%}
-			<a href="/category.html#{{cg}}">{{cg}}</a>
-			{%if forloop.index < forloop.length %}
-			,
-			{%endif%}
-			{%endfor%}
-		&emsp;&emsp;&emsp;&emsp;
-		标签：{{ page.tags | join: ', ' }}
-		&emsp;&emsp;&emsp;&emsp;
-		<time date="{{ page.date }}">{{ page.date|date: "%Y-%m-%d"}}</time>
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="/css/pygments_native.css" />
+<!--		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Handlee"> -->
+		<link rel="stylesheet" href="r-highlight.css" />
+
+		<!-- mathjax api -->
+		<script type="text/javascript"
+		   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	</head>
+	<body>
+
+
+      <header id="header" class="header header--fixed" role="banner">
+	<div class="nav-container">
+	  <div class="icon container">
+	  <span><a href="https://github.com/wumin722"><img src="/images/favicon.ico" alt="github logo"></a></span>
+	  </div>
+	  <nav class="nav container">
+		<span><a href="/index.html">Home</a></span>
+		<span><a href="/archive.html">Category</a></span>
+		<span><a href="/about.html">About</a></span>
+		<span><a href="/links.html">Links</a></span>
+	  </nav>
+	</div>
+      </header>
+
+	
+	<div id="banner-post" class="container">
+		<div id="banner-title"> <p> {{ page.title }} </p> </div>
+		<div id="banner-sub-title"> <p>日期: {{ page.date }} </p> </div>
 	</div>
 
+	<div class="articles">
+	<article id="post" class="container">
 	{{ content }}
 
 	<br />
@@ -34,49 +55,5 @@ layout: default
 
 
 
-
-<!-- 多说评论框开始 -->
-<script type="text/javascript">
-	var duoshuoQuery = {short_name:"datablog"};
-		(function() {
-			var ds = document.createElement('script');
-			ds.type = 'text/javascript';ds.async = true;
-			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-			ds.charset = 'UTF-8';
-			(document.getElementsByTagName('head')[0] 
-			 || document.getElementsByTagName('body')[0]).appendChild(ds);
-		})();
-</script>
-:after
-<!-- 多说评论框结束 -->
-
 <script src="/js/jquery-min.js"></script>
-<script src="/js/Fullscreen.js"></script>
 <script src="/js/r-highlight.js"></script>
-<script type="text/javascript">
-$(function() {
-	var global = window;
-	// ============== 目录提取 ===============
-	(function() {
-		// 设置无目录时，不显示
-		if (!parseInt('{{page.list}}', 10)) {
-			return;
-		}
-
-		var dom = $('<fieldset id="catalogue"><legend>目录</legend></fieldset>'),
-			count = 0;
-		
-		$('#post').find('h2,h3,h4,h5').each(function() {
-			var name = 'catalogue_' + count++;
-			dom.append('<div class="txt_' + this.tagName + '">' +
-				'<a href="#' + name + '">' +
-					this.innerHTML +
-				'</a></div>');
-			this.id = name;
-		});
-
-		dom.appendTo('body');
-	})();
-});
-</script>
-
