@@ -20,7 +20,7 @@
       <header id="header" class="header header--fixed" role="banner">
 	<div class="nav-container">
 	  <div class="icon container">
-	  <span><a href="https://github.com/wumin722"><img src="favicon.ico" alt="github logo"></a></span>
+	  <span><a href="https://github.com/wumin722"><img src="/images/favicon.ico" alt="github logo"></a></span>
 	  </div>
 	  <nav class="nav container">
 		<span><a href="/index.html">Home</a></span>
@@ -42,7 +42,7 @@
 	</div>
 	
 	<div id="banner" class="container">
-		<P> 文章列表 </p>
+		<P> {{ page.title }} </p>
 	</div>
 
 	<div class="articles">
@@ -59,7 +59,7 @@
 	</div>
 		<!--/footer end-->
 
-<script src="headroom-min.js"></script>
+<script src="/js/headroom-min.js"></script>
 <script>
 (function() {
     var header = new Headroom(document.querySelector("#header"), {

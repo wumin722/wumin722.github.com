@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 尝试用github来生成个人博客,借鉴了谢益辉和hahaya的主页（目前的主题使用的是github的）
-summary: 总结
+title: 个人博客
+summary: 尝试用github来生成个人博客,借鉴了谢益辉和hahaya的主页（目前的主题使用的是github的）
 categories: [life]
 tags: [life]
 pubish: true

@@ -7,8 +7,9 @@ row: 4
 
 
 	<div class="artical-list container">  
-		
-		{% for item in (0..3) %}
+		{% assign row = site.posts | size %}
+		{% assign row = row | pided_by:3 %}
+		{% for item in (0..row) %}
 		{% assign rownode = item | times:3 %}		
 			<div class="row">
 			{% for post in site.posts limit:3 offset:rownode %}
@@ -17,14 +18,6 @@ row: 4
 					<div class="title-desc" itemprop="description">{{ post.summary }}</div>
 				</div>
 			{% endfor %}
-			</div>
-		{% endfor %}
-		
-		<div class="row">
-		{% for post in site.posts limit:2 offset:9 %}
-			<div class="col">	 
-				<h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-				<div class="title-desc" itemprop="description">{{ post.summary }}</div>
 			</div>
 		{% endfor %}
 	</div>
