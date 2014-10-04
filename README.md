@@ -1,4 +1,4 @@
-wu's blog use template from hahaya
+wu's blog use template from [mattgraham](https://twitter.com/michigangraham)
 ======
 
 *********
