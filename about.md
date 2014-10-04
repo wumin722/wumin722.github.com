@@ -4,7 +4,6 @@ title: about
 ---
 
 
-<div class="links container">
 <h1>说明</h1>
 	
 ### About Me ###
@@ -14,5 +13,3 @@ title: about
 
 ### About This Page
 使用谢益辉和hahaya的博客作为模板生成
-
-</div>
