@@ -7,8 +7,7 @@ row: 4
 
 
 	<div class="artical-list container">  
-		{% assign row = site.posts | size %}
-		{% assign row = row | pided_by:3 %}
+		{% assign row = site.posts | size | pided_by:3 %}
 		{% for item in (0..row) %}
 		{% assign rownode = item | times:3 %}		
 			<div class="row">
