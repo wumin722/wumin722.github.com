@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-<html>
-
-	<head>
-		<meta charset="utf-8" />
-		<title> 吴敏博客 </title>
-		<link rel="stylesheet" href="/css/index.css" />
-		<link rel="stylesheet" href="/css/pygments_native.css" />
-<!--		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Handlee"> -->
-	</head>
-	<body>
-
-<!-- return back to home page-->
-
-<div id="site-navbar" style="position: absolute; top: -4px; left: -3px; border: 0; z-index: 2000;padding:0;margin:0;"><a href="/" title="返回首页" style="background:none;"><img src="/images/return-back.png" style="padding:0;margin:0;border:0; -webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;"></a></div>	
+---
+layout: default
+title: 文章列表
+summary: .....
+row: 4
+---
 
 
-	
-	<div id="index">
-		<h1>myBlog 博客简介 </h1>	
-		<p>以统计和计算机为主要内容的一些小文章</p>
-		<i> just for fun </i>
-		<p>作者: 吴敏</p>
+	<div class="artical-list container">  
+		
+		{% for item in (0..2) %}
+		{% assign rownode = item | times:3 %}	
+		{% assign rownode = rownode | plus:1 %}	
+			<div class="row">
+			{% for post in site.posts limit:3 offset:rownode %}
+				<div class="col">	 
+					<h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+					<div class="title-desc" itemprop="description">{{ post.summary }}</div>
+				</div>
+			{% endfor %}
+			</div>
+		{% endfor %}
+		
+		<div class="row">
+		{% for post in site.posts limit:2 offset:11 %}
+			<div class="col">	 
+				<h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+				<div class="title-desc" itemprop="description">{{ post.summary }}</div>
+			</div>
+		{% endfor %}
 	</div>
 
-	<div class="read-more">
-		<a href="/list.html"> 阅读文章 </a>
-	</div>		
-	</body>
-</html>

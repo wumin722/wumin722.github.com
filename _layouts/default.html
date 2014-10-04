@@ -19,13 +19,14 @@
 
       <header id="header" class="header header--fixed" role="banner">
 	<div class="nav-container">
+	  <div class="icon container">
+	  <span><a href="https://github.com/wumin722"><img src="favicon.ico" alt="github logo"></a></span>
+	  </div>
 	  <nav class="nav container">
 		<span><a href="/index.html">Home</a></span>
-		<span><a href="/list.html">LIST</a></span>
 		<span><a href="/archive.html">Category</a></span>
-		<span><a href="/about.html">About</a><span>
+		<span><a href="/about.html">About</a></span>
 		<span><a href="/links.html">Links</a></span>
-		<span><a href="/atom.xml">RSS</a></span>
 	  </nav>
 	</div>
       </header>
@@ -33,24 +34,32 @@
 	<div>
 		<div class="feature">
 		  <div class="container feature-title">
-		    <h1 class="feature-main-title"> {{ page.title }} </h1>
-		    <p class="feature-subtitle">{{ page.summary }}</p>
+		    <h1 class="feature-main-title"> 吴敏的部落格 </h1>
+		    <p class="feature-subtitle">与统计有关的一些小文章</p>
 		  </div>
 		</div>
-		{{content}}
+
+	</div>
+	
+	<div id="banner" class="container">
+		<P> 文章列表 </p>
 	</div>
 
-	
-	<div class="footer">
-		<footer>
-			<p class="l">
+	<div class="articles">
+	{{ content }}
+	</div>
+
+	<div class="clear">
+		<footer class="footer container">
+			<p >
 			Powered by <a href="https://github.com/mojombo/jekyll" target="_blank">Jekyll</a>
 			and <a href="https://github.com/twbs/bootstrap/" target="_blank">Bootstrap</a></p>
+			<p>Generated with <a href="http://pages.github.com">GitHub Pages</a></p>
 		</footer>
 	</div>
 		<!--/footer end-->
 
-<script src="/js/headroom-min.js"></script>
+<script src="headroom.min.js"></script>
 <script>
 (function() {
     var header = new Headroom(document.querySelector("#header"), {
@@ -76,6 +85,6 @@
     bttHeadroom.init();
 }());
 </script>
-<script src="/js/jquery-min.js"></script>
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
 </body>
 </html>
