@@ -21,7 +21,7 @@ row: 4
 		{% endfor %}
 		
 		<div class="row">
-		{% for post in site.posts limit:2 offset:11 %}
+		{% for post in site.posts limit:2 offset:9 %}
 			<div class="col">	 
 				<h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
 				<div class="title-desc" itemprop="description">{{ post.summary }}</div>
