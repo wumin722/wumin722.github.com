@@ -7,7 +7,6 @@ tags: [STL]
 publish: true
 ---
 
-# {{ page.title }} #
 {{ page.summary }}
 
 ### std::pair的简单使用 ###

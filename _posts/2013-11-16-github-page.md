@@ -7,7 +7,6 @@ tags: [life]
 pubish: true
 ---
 
-# {{ page.title }} #
 {{ page.summary }}
 
 

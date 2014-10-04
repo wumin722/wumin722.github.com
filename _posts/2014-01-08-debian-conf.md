@@ -5,9 +5,7 @@ summary: ubuntu更新很快，难以跟上节奏。无奈使用更为基础的 d
 categories: [linux]
 tags: [conf]
 publish: true
----
-$ {{ page.title }} $
-{{ page.summary }} 
+--- 
 
 由于在windows环境下用R画图或者写latex文档经常会有乱码问题，所有很早我就把数据分析之类的事情都放到linux环境下来做了。
 之前一直用ubuntu（因为简单易用），倒也挺方便。但本人有个坏毛病，一定要用最新的系统。而恰巧ubuntu更新很快，我就一直不停
