@@ -2,9 +2,6 @@
 layout: default
 title: about
 ---
-
-
-<h1>说明</h1>
 	
 ### About Me ###
 
@@ -12,4 +9,4 @@ title: about
 * email: wumin448085933@gmail.com
 
 ### About This Page
-使用谢益辉和hahaya的博客作为模板生成
+博客参照mattgraham的主题,通过github生成。使用了jekyll和bootstrap技术。
