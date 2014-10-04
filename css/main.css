@@ -190,7 +190,7 @@ z-index: 100;
 left: 0;
 right: 50%;
 height: 50px;
-margin-top: 150px;
+margin-top: -25px;
 margin-left: 250px;
 max-width: 20em;
 text-align: left;
@@ -209,6 +209,11 @@ border-radius: 0px 2px 2px 0px;
 padding: 0 10px 0 35px;
 }
 
+#banner p {
+  font-size: 17.5px;
+  font-weight: 700;
+  color: black;
+}
 
 #banner-post {
   overflow: auto;
@@ -364,3 +369,21 @@ color: #417090;
   color: #CCC6C7;
   text-decoration: none;
 }
+
+/*category page*/
+.links a {
+  font-size: 15px;
+  font-weight: 900;
+  color: #64686D;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #417090;
+  text-decoration: underline;
+}
+
+.links {
+  text-align: center;
+}
+  
