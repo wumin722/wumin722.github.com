@@ -9,6 +9,8 @@ pre {
   padding: 20px;
   border-radius: 3px 3px 3px 3px;
   white-space: pre-wrap;
+  font-size: 15px;
+  padding-top: 5px;
 }
 
 pre code {
