@@ -1,7 +1,7 @@
 ---
 layout: post
 title: debian系统配置
-summary: debian-7 wheezy
+summary: ubuntu更新很快，难以跟上节奏。无奈使用更为基础的 debian-7 wheezy
 categories: [linux]
 tags: [conf]
 publish: true

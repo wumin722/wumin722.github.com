@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 迟到的 Hello World!
+title: 尝试用github来生成个人博客,借鉴了谢益辉和hahaya的主页（目前的主题使用的是github的）
 summary: 总结
 categories: [life]
 tags: [life]

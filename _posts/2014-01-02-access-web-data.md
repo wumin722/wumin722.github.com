@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 网页数据获取的方法
-summary: 最近找数据有些感悟，也就写下来了
+summary: 这两天一直在找数据，已疲惫不堪。现代社会数据很多，但很难有现成数据供你下载。最近找数据有些感悟，也就写下来了
 categories: [IT]
 tags: [IT]
 publish: true
